@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://patricktechmedia.store/sitemap.xml
