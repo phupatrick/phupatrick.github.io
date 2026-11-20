@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patrick Tech Store — Tài khoản số, nâng cấp gói, AI tools</title>
+<meta name="description" content="Danh mục 71 sản phẩm tài khoản số, nâng cấp gói và AI tools. Giá rõ ràng, bảo hành minh bạch. Cập nhật 01:54 21/11/26.">
+<meta property="og:title" content="Patrick Tech Store — Tài khoản số, nâng cấp gói, AI tools">
+<meta property="og:description" content="Danh mục 71 sản phẩm tài khoản số, nâng cấp gói và AI tools. Giá rõ ràng, bảo hành minh bạch. Cập nhật 01:54 21/11/26.">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --bg:#070b17; --panel:#0f172a; --panel-2:#131c31; --line:#1e293b;
+  --text:#e2e8f0; --muted:#94a3b8; --accent:#38bdf8; --accent-2:#22d3ee;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:"Segoe UI",system-ui,-apple-system,sans-serif; line-height:1.6;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+header.site{
+  position:sticky; top:0; z-index:20; backdrop-filter:blur(10px);
+  background:rgba(7,11,23,.86); border-bottom:1px solid var(--line);
+}
+header.site .wrap{display:flex;align-items:center;gap:16px;padding:14px 20px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:18px;letter-spacing:.2px}
+.brand span{color:var(--accent)}
+header.site nav{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+header.site nav a{
+  padding:7px 13px;border-radius:999px;border:1px solid var(--line);
+  font-size:14px;color:var(--muted)
+}
+header.site nav a:hover{color:var(--text);border-color:var(--accent)}
+.hero{padding:56px 0 32px;text-align:center}
+.hero h1{font-size:clamp(26px,4.4vw,44px);margin:0 0 14px;line-height:1.2}
+.hero p{color:var(--muted);max-width:680px;margin:0 auto;font-size:16px}
+.badges{display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.badge{
+  padding:7px 15px;border-radius:999px;background:var(--panel);border:1px solid var(--line);
+  font-size:13px;color:var(--muted)
+}
+.toolbar{display:flex;gap:12px;margin:28px 0 18px;flex-wrap:wrap}
+.toolbar input,.toolbar select{
+  background:var(--panel); border:1px solid var(--line); color:var(--text);
+  border-radius:10px; padding:11px 14px; font-size:15px; font-family:inherit;
+}
+.toolbar input{flex:1;min-width:220px}
+.toolbar input:focus,.toolbar select:focus{outline:2px solid var(--accent);border-color:transparent}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));padding-bottom:20px}
+.card{
+  background:var(--panel); border:1px solid var(--line); border-radius:16px;
+  overflow:hidden; display:flex; flex-direction:column; transition:transform .15s,border-color .15s
+}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card .thumb{aspect-ratio:16/10;background:var(--panel-2);overflow:hidden}
+.card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:15px;margin:0;line-height:1.4}
+.card .meta{font-size:12px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.card .meta span{background:var(--panel-2);padding:3px 8px;border-radius:999px}
+.card .price{margin-top:auto;font-size:18px;font-weight:800;color:var(--accent-2)}
+.card .old{font-size:13px;color:var(--muted);text-decoration:line-through;font-weight:400;margin-left:8px}
+.flash{background:#7c2d12;color:#fdba74;font-size:11px;padding:2px 8px;border-radius:999px;font-weight:700}
+.empty{padding:64px 0;text-align:center;color:var(--muted)}
+footer.site{
+  margin-top:56px;border-top:1px solid var(--line);padding:34px 0;
+  color:var(--muted);font-size:14px
+}
+footer.site .wrap{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+footer.site .links{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+footer.site .links a{padding:7px 13px;border:1px solid var(--line);border-radius:999px}
+footer.site .links a:hover{color:var(--text);border-color:var(--accent)}
+.detail{padding:40px 0}
+.detail .back{color:var(--muted);font-size:14px}
+.detail article{
+  background:var(--panel);border:1px solid var(--line);border-radius:18px;
+  padding:26px;margin-top:18px;display:grid;gap:26px;grid-template-columns:1fr;
+}
+@media(min-width:820px){.detail article{grid-template-columns:1.05fr 1fr}}
+.detail img{width:100%;border-radius:14px;display:block;background:var(--panel-2)}
+.detail h1{font-size:clamp(21px,3vw,30px);margin:0 0 12px;line-height:1.25}
+.detail .price{font-size:30px;font-weight:800;color:var(--accent-2);margin:16px 0}
+.detail .facts{display:grid;gap:10px;margin:18px 0;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.detail .fact{background:var(--panel-2);border-radius:10px;padding:11px 13px}
+.detail .fact b{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.detail .desc{white-space:pre-line;color:var(--muted);font-size:15px}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.cta a{
+  padding:12px 22px;border-radius:10px;font-weight:700;font-size:15px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#04212b
+}
+.cta a.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">Patrick <span>Tech</span> Store</a>
+    <nav>
+      <a href="/">Trang chủ</a>
+      <a href="https://t.me/patricktech" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://zalo.me/patricktech" target="_blank" rel="noopener">Zalo</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <h1>Tài khoản số, nâng cấp gói &amp; AI tools</h1>
+    <p>Giá rõ ràng, giao nhanh, bảo hành minh bạch và hỗ trợ trực tiếp. Liên hệ để được tư vấn trước khi mua.</p>
+    <div class="badges">
+      <span class="badge">71 sản phẩm</span>
+      <span class="badge">5 danh mục</span>
+      <span class="badge">Cập nhật 01:54 21/11/26</span>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Tìm sản phẩm…" aria-label="Tìm sản phẩm">
+    <select id="cat" aria-label="Lọc danh mục">
+      <option value="">Tất cả danh mục</option>
+      <option value="Premium accounts">Premium accounts (47)</option><option value="API keys">API keys (17)</option><option value="Code, tools &amp; software">Code, tools &amp; software (4)</option><option value="Social media">Social media (2)</option><option value="Digital accounts">Digital accounts (1)</option>
+    </select>
+  </div>
+
+  <div class="grid" id="grid">
+    <a class="card" href="/san-pham/chinh-chu-link-nang-goi-gemini-pro-18-thang-khong-bao-hanh-fd2468e0.html" data-name="[primary account] link plan upgrade gemini pro 18 months, no warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/5324603076659760120/93d37f7f0fc28e9cd7d3.jpg" alt="[primary account] Link plan upgrade Gemini Pro 18 months, no warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Link plan upgrade Gemini Pro 18 months, no warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 18 months</span></div>
+    
+    <div class="price">$3.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-capcut-pro-team-7-ngay-bao-hanh-full-4b6c9df8.html" data-name="[dedicated] capcut pro team 7 days - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2046186237063198360/9324174a908310dd4992.jpg" alt="[dedicated] CapCut Pro Team 7 days - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] CapCut Pro Team 7 days - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$0.42</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-capcut-pro-team-30-ngay-bao-hanh-full-c8d41140.html" data-name="[dedicated] capcut pro team 30 days - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/1326380544736354499/085915218ce80cb655f9.jpg" alt="[dedicated] CapCut Pro Team 30 days - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] CapCut Pro Team 30 days - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$2.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-claude-pro-1-thang-bao-hanh-full-6ff1388b.html" data-name="[primary account] claude pro, 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/1154025015207091324/364d4f142ac8aa96f3d9.jpg" alt="[primary account] Claude Pro, 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Claude Pro, 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$19.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-microsoft-365-premium-1-nam-bao-hanh-full-e737bb95.html" data-name="[primary account] microsoft 365 premium 1 year - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/4807482088501786924/1e5cb43477dff681afce.jpg" alt="[primary account] Microsoft 365 Premium 1 year - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Microsoft 365 Premium 1 year - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$12.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/ban-sao-cap-rieng-muse-ai-1-ty-token-kbh-868660ff.html" data-name="[dedicated] muse ai 1 tỷ token, no warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/6213817368208514880/2434c7b11b6e9b30c27f.jpg" alt="[dedicated] Muse AI 1 tỷ Token, no warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Muse AI 1 tỷ Token, no warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$0.72</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/ban-sao-cap-rieng-muse-ai-30-ty-token-kbh-1aadf3d4.html" data-name="[dedicated] muse ai 30 tỷ token, no warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8071440870903128193/5b05bb80675fe701be4e.jpg" alt="[dedicated] Muse AI 30 tỷ Token, no warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Muse AI 30 tỷ Token, no warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$3.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-claude-max-5x-1-thang-bao-hanh-full-77d53daf.html" data-name="[primary account] claude max 5x, 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/28456509266119820/35ea42b3276fa731fe7e.jpg" alt="[primary account] Claude Max 5X, 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Claude Max 5X, 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$92.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/at-truoc-chinh-chu-google-ai-ultra-20x-0-credit-1-thang-bao-hanh-full-f0576a3d.html" data-name="[pre-order][primary account] google ai ultra 20x, 0 credits, 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/709640528630083590/a64cbd3a4cf1ccaf95e0.jpg" alt="[pre-order][primary account] Google AI Ultra 20X, 0 credits, 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[pre-order][primary account] Google AI Ultra 20X, 0 credits, 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$17.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-adobe-all-apps-7-ngay-bao-hanh-full-0de06550.html" data-name="[dedicated] adobe all apps 7 days, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/4206079172759517781/20d65ba98d960dc85487.jpg" alt="[dedicated] Adobe All Apps 7 days, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Adobe All Apps 7 days, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$7.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-chatgpt-plus-1-thang-bao-hanh-full-8a956817.html" data-name="[dedicated] chatgpt plus 1 month - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8280297858713336680/29e8aa8c6f48ef16b659.jpg" alt="[dedicated] ChatGPT Plus 1 month - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] ChatGPT Plus 1 month - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$12.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-elevenlabs-creator-1-thang-bao-hanh-full-960ba9d1.html" data-name="[dedicated] elevenlabs creator 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/4247038978264704011/0221234726fba7a5feea.jpg" alt="[dedicated] ElevenLabs Creator 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] ElevenLabs Creator 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$15.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-figma-pro-edu-1-nam-bao-hanh-full-d757adf8.html" data-name="[dedicated] figma pro edu 1 year, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/3662382123648078657/215ee8ef83da03845acb.jpg" alt="[dedicated] Figma Pro Edu 1 year, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Figma Pro Edu 1 year, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$5.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-hypic-vip-1-nam-bhf-75f0e99f.html" data-name="[dedicated] hypic vip 1 year, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8470906320853437869/99d8d21d564fd6118f5e.jpg" alt="[dedicated] Hypic Vip 1 year, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Hypic Vip 1 year, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$7.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-meitu-vip-7-ngay-bao-hanh-full-8a7617b2.html" data-name="[dedicated] meitu vip 7 days, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/3951028943588028762/27f05be72b5aaa04f34b.jpg" alt="[dedicated] Meitu Vip 7 days, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Meitu Vip 7 days, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$1.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-meitu-vip-1-thang-bao-hanh-full-80942050.html" data-name="[dedicated] meitu vip+ 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/822293451466542948/9baa7be80c558d0bd444.jpg" alt="[dedicated] Meitu Vip+ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Meitu Vip+ 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$0.00</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-notion-plus-edu-2-nam-bao-hanh-1-nam-d26b0dfc.html" data-name="[dedicated] notion plus edu 2 years - warranty 1 year" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/4475251793060210116/f580344f99b718e941a6.jpg" alt="[dedicated] Notion Plus Edu 2 years - warranty 1 year" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Notion Plus Edu 2 years - warranty 1 year</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$7.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-perplexity-pro-1-thang-bao-hanh-full-co-the-gia-han-77d04cca.html" data-name="[dedicated] perplexity pro 1 month, full warranty, renewable" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/7305829151700295048/cf7a0b1c42bbc3e59aaa.jpg" alt="[dedicated] Perplexity Pro 1 month, full warranty, renewable" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Perplexity Pro 1 month, full warranty, renewable</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$8.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-slot-extra-premium-2-thiet-bi-1-thang-bao-hanh-full-fed3f3dd.html" data-name="[dedicated] slot extra premium 2 devices, 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8659614997438790857/1aedab49f7ec76b22ffd.jpg" alt="[dedicated] Slot Extra Premium 2 devices, 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Slot Extra Premium 2 devices, 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$4.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-wink-vip-1-thang-bao-hanh-full-3327afe3.html" data-name="[dedicated] wink vip 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/4236196080944264062/1b916486143b9565cc2a.jpg" alt="[dedicated] Wink Vip 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Wink Vip 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$5.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-wink-vip-7-ngay-bao-hanh-full-49ccd608.html" data-name="[dedicated] wink vip+ 7 days, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/6490057201988023612/2c7f5c682cd5ad8bf4c4.jpg" alt="[dedicated] Wink Vip+ 7 days, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Wink Vip+ 7 days, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$1.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/cap-rieng-xinhtu-vip-1-thang-bao-hanh-full-c4ea5a2e.html" data-name="[dedicated] xinhtu vip 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/5117830109627463479/b1b9c0aeb013314d6802.jpg" alt="[dedicated] Xinhtu Vip 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[dedicated] Xinhtu Vip 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$5.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-canva-pro-1-nam-bao-hanh-full-898c1a48.html" data-name="[primary account] canva pro 1 year - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/4879993883709758107/b75350ff2042a11cf853.jpg" alt="[primary account] Canva Pro 1 year - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Canva Pro 1 year - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$3.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-chatgpt-business-1-thang-bao-hanh-full-4df3aa71.html" data-name="[primary account] chatgpt business 1 month - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/7400048341862708743/1ad30094d250520e0b41.jpg" alt="[primary account] ChatGPT Business 1 month - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] ChatGPT Business 1 month - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$19.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-chatgpt-plus-1-thang-chinh-chu-bao-hanh-full-d2f03772.html" data-name="[primary account] chatgpt plus 1 month primary account - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/3839349183137093974/5b3ada5e1f9a9fc4c68b.jpg" alt="[primary account] ChatGPT Plus 1 month primary account - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] ChatGPT Plus 1 month primary account - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$18.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/microsoft-365-premium-1-nam-chinh-chu-9dfb10d7.html" data-name="[primary account] elsa premium 1 year, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/1047401434140297535/4fa868f211a091fec8b1.jpg" alt="[primary account] Elsa Premium 1 year, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Elsa Premium 1 year, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$41.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-elsa-premium-3-thang-bao-hanh-full-b915217b.html" data-name="[primary account] elsa premium 3 months, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8753002592802562063/2d9c0bc67294f2caab85.jpg" alt="[primary account] Elsa Premium 3 months, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Elsa Premium 3 months, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 3 months</span></div>
+    
+    <div class="price">$19.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-figma-pro-edu-1-nam-bao-hanh-full-5484222b.html" data-name="[primary account] figma pro edu 1 year, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/9197639666832329907/05ecc95da26822367b79.jpg" alt="[primary account] Figma Pro Edu 1 year, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Figma Pro Edu 1 year, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$6.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-gamma-ultra-1-thang-bao-hanh-full-781440d8.html" data-name="[primary account] gamma ultra 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2965880577563984226/0b1942067722f77cae33.jpg" alt="[primary account] Gamma Ultra 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Gamma Ultra 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$48.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-google-ai-pro-12-thang-chinh-chu-bao-hanh-full-ab923d56.html" data-name="[primary account] google ai pro 12 months primary account - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/7892664312294446814/b95958f52848a916f059.jpg" alt="[primary account] Google AI Pro 12 months primary account - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Google AI Pro 12 months primary account - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$14.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-google-ai-ultra-20x-25k-credit-chu-family-1-nam-bao-hanh-goi-464033f0.html" data-name="[primary account] google ai ultra 20x 25k credits, chủ family, 1 year, warranty gói" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/5160227113009296157/d59117393f06bf58e617.jpg" alt="[primary account] Google AI Ultra 20X 25k credits, chủ family, 1 year, warranty gói" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Google AI Ultra 20X 25k credits, chủ family, 1 year, warranty gói</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$1,167.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-google-ai-ultra-20x-0-credit-12-thang-bao-hanh-full-8a4efafe.html" data-name="[primary account] google ai ultra 20x, 0 credits, 12 months, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8870239761055507325/ab24608c48b3c8ed91a2.jpg" alt="[primary account] Google AI Ultra 20X, 0 credits, 12 months, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Google AI Ultra 20X, 0 credits, 12 months, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$123.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-google-ai-ultra-20x-0-credit-3-thang-bao-hanh-full-9575e6c5.html" data-name="[primary account] google ai ultra 20x, 0 credits, 3 months, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/1236348198943899746/3a76f2dedae15abf03f0.jpg" alt="[primary account] Google AI Ultra 20X, 0 credits, 3 months, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Google AI Ultra 20X, 0 credits, 3 months, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 3 months</span></div>
+    
+    <div class="price">$57.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-google-ai-ultra-20x-25k-credit-1-thang-bao-hanh-full-c330af80.html" data-name="[primary account] google ai ultra 20x, 25k credits, 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8789701258145552142/31224e5d9862183c4173.jpg" alt="[primary account] Google AI Ultra 20X, 25k credits, 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Google AI Ultra 20X, 25k credits, 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$61.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-google-ai-ultra-20x-random-25k-credit-1-thang-bao-hanh-full-e7ff964f.html" data-name="[primary account] google ai ultra 20x, random 25k credits, 1 month, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/3111926322746646939/57af9d07b53835666c29.jpg" alt="[primary account] Google AI Ultra 20X, Random 25k credits, 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Google AI Ultra 20X, Random 25k credits, 1 month, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$24.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-icloud-2tb-apple-music-12-thang-bao-hanh-full-e6fb8c4b.html" data-name="[primary account] icloud+ 2tb + apple music 12 months – full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/7947053439074713913/750a0875de4a5e14075b.jpg" alt="[primary account] iCloud+ 2TB + Apple Music 12 months – full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] iCloud+ 2TB + Apple Music 12 months – full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$45.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-icloud-2tb-apple-music-3-thang-bao-hanh-full-f8f29342.html" data-name="[primary account] icloud+ 2tb + apple music 3 months – full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/7802878071636283836/715d0d22db1d5b43020c.jpg" alt="[primary account] iCloud+ 2TB + Apple Music 3 months – full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] iCloud+ 2TB + Apple Music 3 months – full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 3 months</span></div>
+    
+    <div class="price">$11.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-locket-gold-1-nam-bao-hanh-full-32180402.html" data-name="[primary account] locket gold 1 year, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/4349381845860594453/d691f7828225037b5a34.jpg" alt="[primary account] Locket Gold 1 year, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Locket Gold 1 year, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$5.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-notion-business-5-thang-bao-hanh-full-7137ada0.html" data-name="[primary account] notion business 5 months - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/5706397549196142611/a01e67d1ca294b771238.jpg" alt="[primary account] Notion Business 5 months - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Notion Business 5 months - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 5 months</span></div>
+    
+    <div class="price">$10.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/microsoft-365-premium-1-nam-chinh-chu-6006ea2a.html" data-name="[primary account] spotify premium 1 year, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2080139715879829240/037a3c150fb98ee7d7a8.jpg" alt="[primary account] Spotify Premium 1 year, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Spotify Premium 1 year, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    <span class="flash">Nổi bật</span>
+    <div class="price">$14.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-youtube-premium-6-thang-bao-hanh-full-81561a92.html" data-name="[primary account] youtube premium 6 months, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/3815170690532321499/bc33549f2422a57cfc33.jpg" alt="[primary account] Youtube Premium 6 months, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] Youtube Premium 6 months, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 6 months</span></div>
+    
+    <div class="price">$14.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-youtube-premium-family-12-thang-bao-hanh-full-6db7f773.html" data-name="[primary account] youtube premium family 12 months - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8854588924054699570/a7004eac3e11bf4fe600.jpg" alt="[primary account] YouTube Premium Family 12 months - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account] YouTube Premium Family 12 months - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$21.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-canva-edu-chinh-chu-1-nam-bao-hanh-full-5c25cde1.html" data-name="[primary account]canva edu primary account 1 year, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8948527102511563242/e41300bf7002f15ca813.jpg" alt="[primary account]Canva Edu primary account 1 year, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account]Canva Edu primary account 1 year, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$2.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/chinh-chu-youtube-premium-google-ai-pro-1-nam-bao-hanh-full-f2b60127.html" data-name="[primary account]youtube premium + google ai pro 1 year, full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8282750818599535725/76993fdeee116e4f3700.jpg" alt="[primary account]YouTube Premium + Google AI Pro 1 year, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[primary account]YouTube Premium + Google AI Pro 1 year, full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$27.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/dung-chung-chatgpt-plus-1-thang-bao-hanh-full-c9492dcb.html" data-name="[shared] chatgpt plus 1 month - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/6718329946163419756/b0af37cbf20f72512b1e.jpg" alt="[shared] ChatGPT Plus 1 month - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>[shared] ChatGPT Plus 1 month - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$3.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-claude-kiro-10-1-thang-bao-hanh-full-ab8e5b1a.html" data-name="api claude kiro 10$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2016798335701170294/5d8767513a07ba59e316.jpg" alt="API CLAUDE KIRO 10$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CLAUDE KIRO 10$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$1.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-claude-kiro-100-1-thang-bao-hanh-full-47d0ab44.html" data-name="api claude kiro 100$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/1100359450348325515/6b612db770e1f0bfa9f0.jpg" alt="API CLAUDE KIRO 100$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CLAUDE KIRO 100$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$12.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-claude-kiro-20-1-thang-bao-hanh-full-2365d0f1.html" data-name="api claude kiro 20$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/6845153370496350294/ba7681a0dcf65ca805e7.jpg" alt="API CLAUDE KIRO 20$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CLAUDE KIRO 20$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$2.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-claude-kiro-200-1-thang-bao-hanh-full-35f6da62.html" data-name="api claude kiro 200$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/3191083636471610727/fadebd08e05e6000394f.jpg" alt="API CLAUDE KIRO 200$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CLAUDE KIRO 200$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$21.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-claude-kiro-50-1-thang-bao-hanh-full-95a47830.html" data-name="api claude kiro 50$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/7494687890250633653/c8e08d36d060503e0971.jpg" alt="API CLAUDE KIRO 50$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CLAUDE KIRO 50$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$6.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-claude-kiro-500-1-thang-bao-hanh-full-a9374da3.html" data-name="api claude kiro 500$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/5243500968291245752/b715f7c3aa952acb7384.jpg" alt="API CLAUDE KIRO 500$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CLAUDE KIRO 500$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$51.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-codex-10-1-thang-bao-hanh-full-ba39d7fe.html" data-name="api codex 10$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/6292171512658805813/f39a3ba17b1cfa42a30d.jpg" alt="API CODEX 10$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CODEX 10$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$1.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-codex-100-1-thang-bao-hanh-full-e52980ee.html" data-name="api codex 100$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/1321936468962330943/f94e71b03d0dbc53e51c.jpg" alt="API CODEX 100$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CODEX 100$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$12.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-codex-20-1-thang-bao-hanh-full-2a3d46fa.html" data-name="api codex 20$ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/5288204939355467774/08e2851cc9a148ff11b0.jpg" alt="API CODEX 20$ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CODEX 20$ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$3.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-codex-200-1-thang-bao-hanh-full-9f82f945.html" data-name="api codex 200$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8858126750815161289/40e6ca1886a507fb5eb4.jpg" alt="API CODEX 200$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CODEX 200$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$21.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-codex-50-1-thang-bao-hanh-full-448b2c4c.html" data-name="api codex 50$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/3608253126145004891/6acee430a88d29d3709c.jpg" alt="API CODEX 50$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CODEX 50$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$6.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-codex-500-1-thang-bao-hanh-full-fc619fa6.html" data-name="api codex 500$/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2043822318326588277/701cfbe2b75f36016f4e.jpg" alt="API CODEX 500$/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API CODEX 500$/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$51.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-kimi-deepseek-100m-token-4-ngay-47f6f0cc.html" data-name="api kimi &amp; deepseek, 100m token, 4 days" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/3944494105097019960/a242fed4fda17dff24b0.jpg" alt="API KIMI &amp; DEEPSEEK, 100M Token, 4 days" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API KIMI &amp; DEEPSEEK, 100M Token, 4 days</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$3.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-kimi-deepseek-500m-token-7-ngay-2d332357.html" data-name="api kimi &amp; deepseek, 500m token, 7 days" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2099597163059356484/7242f65cc58e45d01c9f.jpg" alt="API KIMI &amp; DEEPSEEK, 500M Token, 7 days" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API KIMI &amp; DEEPSEEK, 500M Token, 7 days</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$13.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/api-kimi-deepseek-50m-token-2-ngay-1b71af4b.html" data-name="api kimi &amp; deepseek, 50m token, 2 days" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/7830828620466108286/5e4d01db02ae82f0dbbf.jpg" alt="API KIMI &amp; DEEPSEEK, 50M Token, 2 days" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>API KIMI &amp; DEEPSEEK, 50M Token, 2 days</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$1.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/ban-sao-chinh-chu-super-duolingo-1-nam-bao-hanh-full-01f06540.html" data-name="copy of [primary account] super duolingo 1 year - full warranty" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/8308278025135967615/c694b1eb67d4e78abec5.jpg" alt="Copy of [primary account] Super Duolingo 1 year - full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Copy of [primary account] Super Duolingo 1 year - full warranty</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$11.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/combo-hot-facebook-bao-hanh-30-ngay-d21f57cf.html" data-name="combo hot facebook, warranty 30 days" data-cat="Social media">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/5973146560186732592/660035ac108290dcc993.jpg" alt="Combo Hot Facebook, warranty 30 days" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Combo Hot Facebook, warranty 30 days</h3>
+    <div class="meta"><span>Social media</span><span>BH 1 month</span></div>
+    
+    <div class="price">$6.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/combo-hot-intargram-ff487d98.html" data-name="combo hot intargram" data-cat="Social media">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2504402305900888086/f724db400a6e8a30d37f.jpg" alt="Combo Hot Intargram" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Combo Hot Intargram</h3>
+    <div class="meta"><span>Social media</span><span>BH 1 month</span></div>
+    
+    <div class="price">$6.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/fix-loi-khong-the-tham-gia-family-12-thang-google-800966e8.html" data-name="fix cannot join family 12 months google" data-cat="Premium accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/7452121472082313701/2ad931e912e292bccbf3.jpg" alt="fix cannot join family 12 months Google" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>fix cannot join family 12 months Google</h3>
+    <div class="meta"><span>Premium accounts</span><span>BH 12 months</span></div>
+    
+    <div class="price">$1.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/key-elevenlabs-1m-credit-1-thang-bao-hanh-full-4032dfef.html" data-name="key elevenlabs 1m credits/1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/1647474070207887165/7b0bbdb5700cf152a81d.jpg" alt="Key ElevenLabs 1M credits/1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Key ElevenLabs 1M credits/1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$21.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/key-elevenlabs-300k-credit-1-thang-bao-hanh-full-b3dc5002.html" data-name="key elevenlabs 300k credits/ 1 month, full warranty" data-cat="API keys">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/5098491093136162253/09c7d1791cc09d9ec4d1.jpg" alt="Key ElevenLabs 300K credits/ 1 month, full warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Key ElevenLabs 300K credits/ 1 month, full warranty</h3>
+    <div class="meta"><span>API keys</span><span>BH 1 month</span></div>
+    
+    <div class="price">$9.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/kling-standard-1100-credit-full-credit.html" data-name="kling standard 1100 credits - full credit warranty" data-cat="Digital accounts">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/780716833448467643/642e9b7a0fc1819fd8d0.jpg" alt="Kling Standard 1100 credits - full credit warranty" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Kling Standard 1100 credits - full credit warranty</h3>
+    <div class="meta"><span>Digital accounts</span><span>BH 1 month</span></div>
+    
+    <div class="price">$10.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/thiet-ke-website-mau-51bdd950.html" data-name="website design mẫu" data-cat="Code, tools &amp; software">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/4736402850838597855/22b20b2c4391c2cf9b80.jpg" alt="Website design mẫu" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Website design mẫu</h3>
+    <div class="meta"><span>Code, tools &amp; software</span><span>BH 1 month</span></div>
+    
+    <div class="price">$4.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/thiet-ke-website-theo-yeu-cau-67faee17.html" data-name="thiết kế websibe on request" data-cat="Code, tools &amp; software">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2274128779690233895/1ef9396771daf084a9cb.jpg" alt="Thiết Kế Websibe on request" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Thiết Kế Websibe on request</h3>
+    <div class="meta"><span>Code, tools &amp; software</span><span>BH 1 month</span></div>
+    
+    <div class="price">$60.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/website-full-deploy-tron-goi-ua-len-internet-36d3e83e.html" data-name="website full deploy (full package + go live)" data-cat="Code, tools &amp; software">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/1853454070011260598/55057e9b3626b778ee37.jpg" alt="Website Full Deploy (full package + go live)" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Website Full Deploy (full package + go live)</h3>
+    <div class="meta"><span>Code, tools &amp; software</span><span>BH 1 month</span></div>
+    
+    <div class="price">$363.90</div>
+  </div>
+</a>
+    <a class="card" href="/san-pham/website-tron-goi-thiet-ke-backend-8c4e53a3.html" data-name="website full package (thiết kế + backend)" data-cat="Code, tools &amp; software">
+  <div class="thumb"><img src="https://f1-zpprd.zdn.vn/2271127266516768148/55727fec3751b60fef40.jpg" alt="Website full package (Thiết kế + Backend)" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="body">
+    <h3>Website full package (Thiết kế + Backend)</h3>
+    <div class="meta"><span>Code, tools &amp; software</span><span>BH 1 month</span></div>
+    
+    <div class="price">$181.90</div>
+  </div>
+</a>
+  </div>
+  <div class="empty" id="empty" hidden>Không tìm thấy sản phẩm phù hợp.</div>
+</main>
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var cat = document.getElementById('cat');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var empty = document.getElementById('empty');
+  function apply(){
+    var term = (q.value || '').trim().toLowerCase();
+    var chosen = cat.value;
+    var shown = 0;
+    cards.forEach(function(card){
+      var okName = !term || card.dataset.name.indexOf(term) !== -1;
+      var okCat = !chosen || card.dataset.cat === chosen;
+      var show = okName && okCat;
+      card.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    empty.hidden = shown !== 0;
+  }
+  q.addEventListener('input', apply);
+  cat.addEventListener('change', apply);
+})();
+</script>
+<footer class="site">
+  <div class="wrap">
+    <div>© 2026 Patrick Tech Store · Cập nhật 01:54 21/11/26</div>
+    <div class="links">
+      <a href="https://t.me/patricktech" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://zalo.me/patricktech" target="_blank" rel="noopener">Zalo</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
